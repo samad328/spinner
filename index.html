@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about.css">
+    <title>Document</title>
+</head>
+<body>
+    
+  <div class="slider">
+    <div class="circular-slider circular-slider-1">
+      <div class="wrapper">
+        <div class="controls">
+          <div class="controls__left">
+            <div class="icon-wrapper"><i class="far fa-arrow-alt-circle-left"></i></div>
+          </div>
+          <div class="controls__right">
+            <div class="icon-wrapper"><i class="far fa-arrow-alt-circle-right"></i></div>
+          </div>
+          <div class="controls__autoplay controls__autoplay_running">
+            <div class="icon-wrapper">
+              <div class="pause"><i class="far fa-pause-circle"></i></div>
+              <div class="run"><i class="far fa-play-circle"></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="slides-holder">
+          <svg viewBox="0 0 400 400" style="touch-action: none;"><path stroke-width="2" stroke="red" id="circularCarouselPath" fill="none" d="M396,200 C396,308.24781 308.24781,396 200,396 91.75219,396 4,308.24781 4,200 4,91.75219 91.75219,4 200,4 308.24781,4 396,91.75219 396,200 z" style="touch-action: none;"></path></svg>
+          <div class="slides-holder__item slides-holder__item_active"><img src="img/js.svg" alt="img"/></div>
+          <div class="slides-holder__item"><img src="img/css.png" alt="img"/></div>
+          <div class="slides-holder__item"><img src="img/html.png" alt="img"/></div>
+          <div class="slides-holder__item"><img src="img/sass.png" alt="img"/></div>
+          <div class="slides-holder__item"><img src="img/vstudio.png" alt="img"/></div>
+          <div class="slides-holder__item"><img src="img/chrome.png" alt="img"/></div>
+          <div class="slides-holder__item"><img src="img/html.png" alt="img"/></div>
+          <div class="slides-holder__item"><img src="img/sass.png" alt="img"/></div>
+          <div class="slides-holder__item"><img src="img/vstudio.png" alt="img"/></div>
+          <div class="slides-holder__item"><img src="img/chrome.png" alt="img"/></div>
+        </div>
+        <div class="descriptions">
+          <div class="descriptions__item descriptions__item_visible">
+            <h1>Javascript</h1>
+            <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore, ea? Commodi alias ad corporis velit, neque facere fugit nulla exercitationem veniam. Facere est cupiditate perspiciatis aliquid odio impedit enim quo!</p>
+          </div>
+          <div class="descriptions__item">
+            <h1>Css3</h1>
+            <p class="description"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore, ea? Commodi alias ad corporis velit, neque facere fugit nulla exercitationem veniam. Facere est cupiditate perspiciatis aliquid odio impedit enim quo!</p>
+          </div>
+          <div class="descriptions__item">
+            <h1>Html5</h1>
+            <p class="description"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore, ea? Commodi alias ad corporis velit, neque facere fugit nulla exercitationem veniam. Facere est cupiditate perspiciatis aliquid odio impedit enim quo!</p>
+          </div>
+          <div class="descriptions__item">
+            <h1>Sass</h1>
+            <p class="description"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore, ea? Commodi alias ad corporis velit, neque facere fugit nulla exercitationem veniam. Facere est cupiditate perspiciatis aliquid odio impedit enim quo!</p>
+          </div>
+          <div class="descriptions__item">
+            <h1>MVS Code</h1>
+            <p class="description"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore, ea? Commodi alias ad corporis velit, neque facere fugit nulla exercitationem veniam. Facere est cupiditate perspiciatis aliquid odio impedit enim quo!</p>
+          </div>
+          <div class="descriptions__item">
+            <h1>Chrome</h1>
+            <p class="description"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore, ea? Commodi alias ad corporis velit, neque facere fugit nulla exercitationem veniam. Facere est cupiditate perspiciatis aliquid odio impedit enim quo!</p>
+          </div>
+          <div class="descriptions__item">
+            <h1>Html5</h1>
+            <p class="description"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore, ea? Commodi alias ad corporis velit, neque facere fugit nulla exercitationem veniam. Facere est cupiditate perspiciatis aliquid odio impedit enim quo!</p>
+          </div>
+          <div class="descriptions__item">
+            <h1>Sass</h1>
+            <p class="description"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore, ea? Commodi alias ad corporis velit, neque facere fugit nulla exercitationem veniam. Facere est cupiditate perspiciatis aliquid odio impedit enim quo!</p>
+          </div>
+          <div class="descriptions__item">
+            <h1>MVS Code</h1>
+            <p class="description"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore, ea? Commodi alias ad corporis velit, neque facere fugit nulla exercitationem veniam. Facere est cupiditate perspiciatis aliquid odio impedit enim quo!</p>
+          </div>
+          <div class="descriptions__item">
+            <h1>Chrome</h1>
+            <p class="description"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore, ea? Commodi alias ad corporis velit, neque facere fugit nulla exercitationem veniam. Facere est cupiditate perspiciatis aliquid odio impedit enim quo!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p id="value" style="color:white; font-size:2rem">0</p>
+
+  
+  <!-- <script src="js/circular-slider.js"></script> -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Draggable.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/MotionPathPlugin.min.js"></script>
+  <script src="https://assets.codepen.io/16327/InertiaPlugin.min.js"></script>
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ThrowPropsPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/plugins/ModifiersPlugin.min.js"></script>
+  <!-- The following plugins are Club GSAP perks. Download them and include them locally.--> 
+  <!-- <script src="/[YOUR_DIRECTORY]/InertiaPlugin.min.js"></script>
+  <script src="/[YOUR_DIRECTORY]/Physics2DPlugin.min.js"></script>
+  <script src="/[YOUR_DIRECTORY]/PhysicsPropsPlugin.min.js"></script> -->
+      <script src="about.js"></script>
+</body>
+</html>
